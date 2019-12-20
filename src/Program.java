@@ -26,16 +26,15 @@ public class Program {
 			Integer hours = sc.nextInt();
 			System.out.print("Value per hour: ");
 			Double valuePerHour = sc.nextDouble();
-			if(check=='y') {
+			sc.nextLine();
+			if (check == 'y') {
 				System.out.print("Additional charge: ");
 				Double additionalCharge = sc.nextDouble();
 				sc.nextLine();
 				func.add(new FuncTerceiro(name, hours, valuePerHour, additionalCharge));
-			}
-			else {
+			} else {
 				func.add(new Func(name, hours, valuePerHour));
 			}
-			sc.nextLine();
 		}
 		System.out.println();
 		System.out.println("PAYMENTS:");
